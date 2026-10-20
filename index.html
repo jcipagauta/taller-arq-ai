@@ -138,6 +138,12 @@ section[hidden]{display:none}
 .partners{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--space-4) var(--space-5);margin-top:var(--space-3)}
 .partners img{display:block}
 @media (max-width:700px){.about{grid-template-columns:1fr}}
+.sim-head{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--space-5);flex-wrap:wrap}
+.sim-head > div{flex:1 1 360px;min-width:0}
+.qrcard{margin:0;text-align:center}
+.qrcard .qr{display:block;width:160px;height:160px;border:1px solid var(--line);border-radius:8px}
+.qrcard figcaption{font:500 12px/16px var(--font-sans);color:var(--ink-muted);margin-top:var(--space-1)}
+.qrcard a{font:400 11px/16px var(--font-mono);color:var(--primary-text);text-decoration:none}
 .actions{display:flex;flex-wrap:wrap;gap:var(--space-2);margin:var(--space-3) 0}
 .timer{display:flex;align-items:center;flex-wrap:wrap;gap:var(--space-3);margin:var(--space-4) 0;padding:var(--space-3) var(--space-4);border:1px solid var(--line);border-radius:8px;background:var(--surface-tint)}
 .timer .time{font:700 40px/1 var(--font-mono);color:var(--ink);min-width:3.4ch}
@@ -508,8 +514,17 @@ section[hidden]{display:none}
 </section>
 
 <section id="sim" role="tabpanel" hidden>
-  <h2>Simulador de carga, instancias y costo</h2>
-  <p>Elige el sitio y los usuarios: se arma la arquitectura más barata que responde en 600 ms o menos.</p>
+  <div class="sim-head">
+    <div>
+      <h2>Simulador de carga, instancias y costo</h2>
+      <p>Elige el sitio y los usuarios: se arma la arquitectura más barata que responde en 600 ms o menos.</p>
+    </div>
+    <figure class="qrcard">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="qr" role="img" aria-label="Código QR del taller: jcipagauta.github.io/taller-arq-ai" shape-rendering="crispEdges"><path fill="#fff" d="M0 0h39v39h-39z"/><path class="qrline" stroke="#07172c" d="M3 3.5h7m1 0h1m2 0h2m1 0h1m1 0h1m2 0h2m2 0h1m2 0h7m-33 1h1m5 0h1m1 0h2m1 0h2m1 0h1m1 0h2m5 0h2m1 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m3 0h6m2 0h2m2 0h1m3 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m7 0h2m2 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m2 0h1m1 0h2m3 0h3m5 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m3 0h7m1 0h1m2 0h1m2 0h1m1 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h2m4 0h4m1 0h1m2 0h1m-23 1h1m1 0h2m1 0h3m1 0h1m4 0h5m2 0h1m4 0h1m2 0h1m1 0h2m-32 1h2m2 0h1m2 0h1m1 0h4m3 0h4m2 0h1m2 0h2m1 0h2m1 0h1m-33 1h1m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m2 0h1m1 0h1m2 0h3m2 0h4m1 0h2m-31 1h3m4 0h1m2 0h1m2 0h1m1 0h1m2 0h1m6 0h1m1 0h1m1 0h1m-31 1h2m2 0h2m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m3 0h2m1 0h2m-33 1h3m1 0h1m3 0h3m1 0h1m1 0h1m5 0h1m6 0h1m3 0h1m-30 1h1m1 0h1m1 0h1m2 0h4m1 0h1m4 0h2m1 0h1m1 0h1m1 0h1m2 0h1m-29 1h2m1 0h1m2 0h1m1 0h1m3 0h1m1 0h1m2 0h1m2 0h3m1 0h3m1 0h2m-29 1h1m3 0h4m8 0h1m1 0h3m1 0h3m1 0h1m1 0h1m-31 1h2m3 0h1m5 0h1m1 0h1m1 0h1m2 0h1m1 0h2m1 0h4m1 0h2m1 0h2m-30 1h1m2 0h3m3 0h5m1 0h1m2 0h2m2 0h4m1 0h2m-32 1h1m2 0h3m2 0h1m3 0h1m4 0h3m2 0h2m1 0h2m1 0h1m3 0h1m-33 1h1m4 0h3m1 0h1m1 0h3m1 0h2m4 0h1m1 0h1m3 0h1m1 0h2m1 0h1m-33 1h1m3 0h1m3 0h3m1 0h5m3 0h2m1 0h2m1 0h1m3 0h1m1 0h1m-27 1h2m2 0h3m1 0h2m1 0h4m1 0h3m2 0h1m1 0h4m-32 1h2m1 0h1m2 0h1m2 0h2m3 0h1m2 0h1m1 0h1m4 0h2m1 0h1m2 0h1m-32 1h1m1 0h1m1 0h6m3 0h1m3 0h1m1 0h1m2 0h7m-21 1h1m1 0h1m2 0h4m2 0h2m1 0h3m3 0h2m-30 1h7m1 0h1m2 0h4m1 0h5m2 0h2m1 0h1m1 0h1m-29 1h1m5 0h1m1 0h2m1 0h4m1 0h3m2 0h4m3 0h4m-32 1h1m1 0h3m1 0h1m2 0h2m1 0h1m2 0h4m1 0h1m2 0h6m1 0h1m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m3 0h2m2 0h1m2 0h1m2 0h3m2 0h1m1 0h2m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h2m3 0h4m2 0h2m1 0h1m1 0h2m1 0h2m-31 1h1m5 0h1m2 0h1m1 0h3m3 0h1m2 0h1m2 0h2m1 0h3m3 0h1m-33 1h7m1 0h2m2 0h1m3 0h2m1 0h1m1 0h1m1 0h1m4 0h1m1 0h1"/></svg>
+      <figcaption>Abre el taller en tu celular</figcaption>
+      <a href="https://jcipagauta.github.io/taller-arq-ai/#home" target="_blank" rel="noopener">jcipagauta.github.io/taller-arq-ai</a>
+    </figure>
+  </div>
   <div class="figure" id="anim">
     <div class="fields">
       <label class="field"><span class="label">Tipo de sitio</span><select class="ds-select" data-kind="site"><option value="erp">ERP / Panel</option><option value="ecommerce">Ecommerce</option><option value="landing">Landing</option></select></label>
